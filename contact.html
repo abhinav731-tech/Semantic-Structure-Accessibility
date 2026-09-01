@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Abhinav Kumar</title>
+  <meta name="description" content="Get in touch with Abhinav Kumar for internships, freelance work, or collaboration in the CS / AI-ML domain. Accessible contact form and direct contact details.">
+  <meta name="keywords" content="contact Abhinav Kumar, hire CSE AI ML student, internship, freelance, collaboration">
+  <meta name="author" content="Abhinav Kumar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/contact.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — Abhinav Kumar">
+  <meta property="og:description" content="Get in touch for internships, freelance work, or collaboration in the CS / AI-ML domain.">
+  <meta property="og:url" content="https://example.com/contact.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact — Abhinav Kumar">
+  <meta name="twitter:description" content="Get in touch for internships, freelance work, or collaboration in the CS / AI-ML domain.">
+
+  <meta name="theme-color" content="#0F2A47">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrapper">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">AK</span>
+        <span class="brand-name">Abhinav&nbsp;Kumar</span>
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="visually-hidden">Toggle</span> Menu
+      </button>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero" aria-labelledby="contact-heading" style="padding-block: var(--space-5) var(--space-4);">
+      <div class="wrapper">
+        <p class="hero-eyebrow">Fig. 06 — Get in touch</p>
+        <h1 id="contact-heading" class="hero-title" style="font-size: var(--fs-800);">Contact</h1>
+        <p class="hero-lede">
+          Send a message using the form below, or reach out directly using
+          the details alongside it. Every field with an asterisk is
+          required.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-form-heading">
+      <div class="wrapper contact-layout">
+
+        <div class="form-panel">
+          <h2 id="contact-form-heading" style="font-size: var(--fs-600);">Send a message</h2>
+
+          <!-- Live region: announces success/error summary to assistive tech -->
+          <div
+            id="form-status"
+            class="form-status"
+            role="status"
+            aria-live="polite"
+            tabindex="-1"
+          ></div>
+
+          <form id="contact-form" novalidate>
+
+            <div class="field">
+              <label for="full-name">Full name<span class="required-flag" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                autocomplete="name"
+                required
+                aria-required="true"
+                aria-describedby="full-name-error"
+                data-error-required="Please enter your full name."
+              >
+              <span class="error-message" id="full-name-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="email">Email address<span class="required-flag" aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="email-hint email-error"
+                data-error-required="Please enter your email address."
+              >
+              <span class="hint" id="email-hint">We'll only use this to reply to your message.</span>
+              <span class="error-message" id="email-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject<span class="required-flag" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                autocomplete="off"
+                required
+                aria-required="true"
+                aria-describedby="subject-error"
+                data-error-required="Please add a short subject line."
+              >
+              <span class="error-message" id="subject-error" role="alert"></span>
+            </div>
+
+            <fieldset>
+              <legend>Reason for contact<span class="required-flag" aria-hidden="true">*</span></legend>
+              <div class="radio-row">
+                <input type="radio" id="reason-internship" name="reason" value="internship" checked>
+                <label for="reason-internship">Internship opportunity</label>
+              </div>
+              <div class="radio-row">
+                <input type="radio" id="reason-freelance" name="reason" value="freelance">
+                <label for="reason-freelance">Freelance project</label>
+              </div>
+              <div class="radio-row">
+                <input type="radio" id="reason-collab" name="reason" value="collaboration">
+                <label for="reason-collab">Collaboration</label>
+              </div>
+              <div class="radio-row">
+                <input type="radio" id="reason-other" name="reason" value="other">
+                <label for="reason-other">Other</label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="message">Message<span class="required-flag" aria-hidden="true">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                aria-required="true"
+                minlength="10"
+                aria-describedby="message-hint message-error"
+                data-error-required="Please write a short message."
+              ></textarea>
+              <span class="hint" id="message-hint">Minimum 10 characters.</span>
+              <span class="error-message" id="message-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <div class="checkbox-row">
+                <input type="checkbox" id="consent" name="consent" required aria-required="true" aria-describedby="consent-error">
+                <label for="consent">I agree to be contacted about this message.<span class="required-flag" aria-hidden="true">*</span></label>
+              </div>
+              <span class="error-message" id="consent-error" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+
+        <aside class="contact-info" aria-labelledby="contact-info-heading">
+          <h2 id="contact-info-heading" style="font-size: var(--fs-600);">Direct contact</h2>
+          <dl>
+            <dt>Email</dt>
+            <dd><a href="mailto:hello@example.com">hello@example.com</a></dd>
+
+            <dt>Location</dt>
+            <dd>Patna, Bihar, India</dd>
+
+            <dt>Availability</dt>
+            <dd>Open to internships &amp; freelance work</dd>
+          </dl>
+
+          <h2 style="font-size: var(--fs-600); margin-top: var(--space-4);">Elsewhere</h2>
+          <ul class="social-list" aria-label="Social profiles">
+            <li>
+              <a href="https://github.com/" aria-label="Abhinav Kumar on GitHub (opens in a new tab)" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.27-5.23-5.68 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.67.41.36.78 1.08.78 2.17v3.22c0 .31.21.67.8.56A10.51 10.51 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+                <span class="visually-hidden">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" aria-label="Abhinav Kumar on LinkedIn (opens in a new tab)" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+                <span class="visually-hidden">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hello@example.com" aria-label="Email Abhinav Kumar">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm1.4 2 8.6 6.44L20.6 6H3.4ZM3 8.2V18h18V8.2l-9 6.75L3 8.2Z"/></svg>
+                <span class="visually-hidden">Email</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper">
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer-meta">© 2026 Abhinav Kumar. Built with semantic HTML5.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
